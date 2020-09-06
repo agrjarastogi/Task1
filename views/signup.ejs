@@ -1,22 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+    body {
+        text-align: center;
+    }
+    form {
+        display: inline-block;
+    }</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="/style.css" rel="stylesheet" type="text/css">
     <title>Event Management</title>
 </head>
 <body>
+    
+    <div id="content">
+        <div id = "banner_image">
    <div class="container">
     <div class="row">
         <div class="col-xs-4"></div>
         <div class="col-xs-4"> 
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    <br><br><h4>SIGN UP</h4>
-                </div>
+
                 <div class="panel-body">
-                          <form action='/signup' method='POST'>
+                    <br><br><h3 style="color:greenyellow">SIGN UP</h3>
+                          <form action='/signup' method='POST' style="display: inline-block;">
                                 <div class="form-group">
                                 <input type="text" class="form-control" id="name" placeholder="Name" name="name"  required>
                             </div>
@@ -27,17 +38,23 @@
                                 <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="contact" placeholder="Contact" maxlength="10" size="10" name="contact" required>
+                                <input type="tel" id="phone" class="form-control" placeholder="Contact" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
 
                             
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</a>
+                            
                     </form>
                     
+                    
+                    
                                                     
-                
+                </div></div>
                 </div>
-
+            </div>
+            </div>
+            </div>
+            </div>
 
    </div>
 </body>
